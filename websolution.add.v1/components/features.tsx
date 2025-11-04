@@ -56,7 +56,7 @@ export default function Features() {
             geist.className,
           )}
         >
-          Features
+          Why Choose CodeYug
         </h2>
         <FollowerPointerCard
           title={

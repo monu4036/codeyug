@@ -56,7 +56,7 @@ export function StickyFooter() {
                   onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
                   onMouseLeave={(e) => (e.target.style.color = "#121113")}
                 >
-                  Home
+                  <a href="#features">Features</a>
                 </li>
                 <li
                   className="hover:underline cursor-pointer transition-colors"
@@ -64,7 +64,7 @@ export function StickyFooter() {
                   onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
                   onMouseLeave={(e) => (e.target.style.color = "#121113")}
                 >
-                  Docs
+                  <a href="#testimonials">Testimonials</a>
                 </li>
                 <li
                   className="hover:underline cursor-pointer transition-colors"
@@ -72,7 +72,7 @@ export function StickyFooter() {
                   onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
                   onMouseLeave={(e) => (e.target.style.color = "#121113")}
                 >
-                  Components
+                  <a href="#about">About Us</a>
                 </li>
               </ul>
               <ul className="space-y-2">
@@ -82,7 +82,7 @@ export function StickyFooter() {
                   onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
                   onMouseLeave={(e) => (e.target.style.color = "#121113")}
                 >
-                  Github
+                  <a href="#contact">Contact Us</a>
                 </li>
                 <li
                   className="hover:underline cursor-pointer transition-colors"
@@ -90,7 +90,7 @@ export function StickyFooter() {
                   onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
                   onMouseLeave={(e) => (e.target.style.color = "#121113")}
                 >
-                  Twitter
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a>
                 </li>
                 <li
                   className="hover:underline cursor-pointer transition-colors"
@@ -98,19 +98,20 @@ export function StickyFooter() {
                   onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
                   onMouseLeave={(e) => (e.target.style.color = "#121113")}
                 >
-                  Discord
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
                 </li>
               </ul>
             </motion.div>
-            <motion.h2
-              className="absolute bottom-0 left-0 translate-y-1/3 sm:text-[192px] text-[80px] font-bold select-none"
-              style={{ color: "#121113" }}
+            <motion.div
+              className="absolute bottom-0 left-0 translate-y-1/3 flex flex-col"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              v0
-            </motion.h2>
+              <img src="/codeyug-logo.png" alt="CodeYug" className="h-24 sm:h-40 w-auto" style={{ filter: "brightness(0)" }} />
+              <p className="text-sm sm:text-base font-medium mt-2" style={{ color: "#121113" }}>© 2025 CodeYug. All rights reserved.</p>
+              <p className="text-xs sm:text-sm" style={{ color: "#121113" }}>Crafted with ❤️ by CodeYug</p>
+            </motion.div>
           </div>
         </motion.div>
       )}

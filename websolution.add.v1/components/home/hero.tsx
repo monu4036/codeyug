@@ -136,8 +136,8 @@ export default function Hero() {
             className="mt-auto pb-8"
           >
             <div className="text-center">
-              <p className="text-sm text-muted-foreground mb-6">Trusted by developers at</p>
-              <div className="flex items-center justify-center gap-8">
+              <p className="text-sm text-muted-foreground mb-6">Powered by cutting-edge technologies</p>
+              <div className="flex items-center justify-center gap-8 flex-wrap">
                 {/* Vercel Logo */}
                 <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] transition-all duration-300">
                   <svg
